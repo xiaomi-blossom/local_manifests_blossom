@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- Remotes -->
+  <remote name="blossom" fetch="https://github.com/xiaomi-blossom" />
+  
+  <!-- Device Trees -->
+  <project path="device/xiaomi/blossom" name="device_xiaomi_blossom" remote="astechpro20" revision="15.0" />
+
+  <!-- SELinux policies -->
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="blossom" revision="15.0" />
+
+  <!-- Hardware Supports -->
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="blossom" revision="15.0" />
+
+  <!-- kernel tree -->
+  <project path="device/xiaomi/blossom-kernel" name="xiaomi_blossom-kernel" remote="blossom" revision="15.0">
+    <linkfile src="headers" dest="kernel/xiaomi/blossom" />
+  </project>
+
+  <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="blossom" revision="15.0" />
+
+  <!-- RevampedFMRadio -->
+  <project path="packages/apps/RevampedFMRadio" name="packages_apps_RevampedFMRadio" remote="blossom" revision="main" />
+  
+</manifest>
