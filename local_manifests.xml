@@ -5,7 +5,7 @@
   <remote name="blossom" fetch="https://github.com/xiaomi-blossom" />
   
   <!-- Device Trees -->
-  <project path="device/xiaomi/blossom" name="device_xiaomi_blossom" remote="astechpro20" revision="15.0" />
+  <project path="device/xiaomi/blossom" name="device_xiaomi_blossom" remote="blossom" revision="15.0" />
 
   <!-- SELinux policies -->
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="blossom" revision="15.0" />
